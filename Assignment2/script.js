@@ -54,7 +54,7 @@ function sendButton(){
     const phone = document.getElementById("phone");
     const isPhoneFilled = checkAndShowMessage(phone, "phoneMessage");
     if(isAmountFilled === true && isPhoneFilled === true){
-        resultDiv.innerText = `POST: Amount=${amount.value}, Phone=${phone.value}}`;
+        resultDiv.innerText = `POST: {amount=${amount.value}, phone number=${phone.value}}`;
     }
 };
 
