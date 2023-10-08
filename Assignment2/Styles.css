@@ -1,4 +1,9 @@
 
+/* body {
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+} */
 
 .container{
     margin-top:5%;
@@ -29,7 +34,7 @@
 }
 
 #amountToPay input,#amountToPay label{
-    width: 45%;
+    width: 30%;
 }
 #getPaymentLink h3{
     margin: 15px 0;
@@ -152,6 +157,16 @@
     height: 50px;
     width: 50px;
 }
+
+#rupeeSymbol{
+    border: 2px solid black; 
+    display: inline-block; 
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: -.5rem; 
+    margin-right: -.75rem;
+}
+
 
 .roundIcons img,.headingLogo img,.footer div img{
     width: 100%;
