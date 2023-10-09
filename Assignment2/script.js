@@ -7,6 +7,7 @@ const NoUPI = document.querySelector("#payOptions");
 var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
 // Show/hide payment options based on device
+console.log(navigator.userAgent);
 function hiddingUPIs(){
     if(!/Android|iPhone|iPad|iPod/.test(navigator.userAgent)){
         NoUPI.innerHTML = "No payment options available.";
