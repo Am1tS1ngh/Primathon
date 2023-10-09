@@ -1,4 +1,5 @@
 
+
 .container{
     margin-top:5%;
     width: fit-content;
@@ -22,13 +23,13 @@
 
 #amountToPay{
     text-align: center;
-    margin: 20px;
+    margin: 20px 10px;
     color: gray;
     font-style:oblique;
 }
 
 #amountToPay input,#amountToPay label{
-    width: 30%;
+    width: 40%;
 }
 #getPaymentLink h3{
     margin: 15px 0;

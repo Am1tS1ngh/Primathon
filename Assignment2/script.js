@@ -6,11 +6,9 @@ const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 const NoUPI = document.querySelector("#payOptions");
 var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-
 // Show/hide payment options based on device
-
 function hiddingUPIs(){
-    if(screenWidth >= 992){
+    if(!/android|iPhone|iPad|iPod/.test(navigator.userAgent)){
         NoUPI.innerHTML = "No payment options available.";
         NoUPI.style.height = "5rem";
         NoUPI.style.display = 'flex';
@@ -59,3 +57,4 @@ function sendButton(){
 };
 
 window.addEventListener('load', hiddingUPIs());
+
