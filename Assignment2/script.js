@@ -8,7 +8,7 @@ var screenWidth = window.innerWidth || document.documentElement.clientWidth || d
 
 // Show/hide payment options based on device
 function hiddingUPIs(){
-    if(!/android|iPhone|iPad|iPod/.test(navigator.userAgent)){
+    if(!/Android|iPhone|iPad|iPod/.test(navigator.userAgent)){
         NoUPI.innerHTML = "No payment options available.";
         NoUPI.style.height = "5rem";
         NoUPI.style.display = 'flex';
